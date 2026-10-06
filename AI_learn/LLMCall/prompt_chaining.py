@@ -10,7 +10,7 @@ load_dotenv(BASE_DIR / ".env")
 my_api_key = os.getenv("GROQ_API_KEY")
 
 if not my_api_key:
-    raise ValueError("NOT GROQ API KEY AVAIALABLE")
+    raise ValueError("NO GROQ API KEY AVAIALABLE")
 
 client=Groq(api_key=my_api_key)
 model = "openai/gpt-oss-120b"
@@ -22,7 +22,7 @@ Requirements:
 - Strong Python
 - FastAPI or Django
 - PostgreSQL
-- Docker
+- Docker 
 - AWS
 - REST APIs
 - 2+ years of experience
